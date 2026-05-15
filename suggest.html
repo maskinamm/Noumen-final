@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  
+  <title>Ноумен — Предложить цитату</title>
+  <meta name="description" content="Поделитесь мудрой цитатой, которая вдохновила вас. После модерации она появится в коллекции Ноумен." />
+  <meta name="keywords" content="предложить цитату, добавить цитату, поделиться мудростью" />
+  <meta name="author" content="Ноумен" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/LOGOTRUE.svg" alt="Логотип Ноумен" width="160" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" id="mainNav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="suggest.html">Предложить цитату</a>
+            </li>
+            <li class="nav-item" id="profileLink">
+              <a class="nav-link" href="profile.html">Личный кабинет</a>
+            </li>
+            <li class="nav-item" id="loginLink">
+              <a class="nav-link" href="login.html">Вход</a>
+            </li>
+            <li class="nav-item" id="logoutLink" style="display: none;">
+              <a class="nav-link" href="#" id="logoutNavBtn">Выйти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Главный контейнер для большой формы по центру -->
+    <div class="suggest-page-wrapper">
+      <h2 class="suggest-title">ПРЕДЛОЖИТЬ ЦИТАТУ</h2>
+      <p class="suggest-subtitle">Заполните форму – после модерации цитата появится в нужной категории.</p>
+
+      <form id="suggestForm" class="suggest-form">
+        <div class="form-group">
+          <label for="quoteText">Текст цитаты *</label>
+          <textarea id="quoteText" rows="4" required placeholder="Введите цитату..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="authorName">Автор цитаты *</label>
+          <input type="text" id="authorName" required placeholder="Имя автора" />
+        </div>
+
+        <div class="form-group">
+          <label for="authorAvatar">URL фото автора (необязательно)</label>
+          <input type="url" id="authorAvatar" placeholder="https://example.com/photo.jpg" />
+          <small>Оставьте пустым – будет использовано стандартное изображение</small>
+        </div>
+
+        <div class="form-group">
+          <label for="quoteSource">Источник (книга, статья, выступление и т.п.)</label>
+          <input type="text" id="quoteSource" placeholder="Например: «Идиот», Ф. Достоевский" />
+        </div>
+
+        <div class="form-group">
+          <label for="quoteCategory">Категория *</label>
+          <select id="quoteCategory" required>
+            <option value="">– Выберите категорию –</option>
+            <option value="word">Слово и речь</option>
+            <option value="science">Наука и познание</option>
+            <option value="literature">Литература и искусство</option>
+            <option value="philosophy">Философия и мышление</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="userEmail">Ваш email (необязательно)</label>
+          <input type="email" id="userEmail" placeholder="someone@example.com" />
+          <small>Если укажете – мы сообщим, когда цитату добавят</small>
+        </div>
+
+        <button type="submit" class="submit-btn">Отправить на модерацию</button>
+        <div id="formMessage" class="form-message"></div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© Все права защищены, «Ноумен», 2026</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

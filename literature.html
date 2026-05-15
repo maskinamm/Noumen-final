@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  
+  <title>Ноумен — Литература и искусство</title>
+  <meta name="description" content="Лучшие цитаты классиков и современных авторов о литературе, искусстве, творчестве и вдохновении." />
+  <meta name="keywords" content="литература, искусство, цитаты писателей, творчество, вдохновение, классики" />
+  <meta name="author" content="Ноумен" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/LOGOTRUE.svg" alt="Логотип Ноумен" width="160" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="mainNav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="suggest.html">Предложить цитату</a>
+              </li>
+              <li class="nav-item" id="profileLink">
+                <a class="nav-link" href="profile.html">Личный кабинет</a>
+              </li>
+              <li class="nav-item" id="loginLink">
+                <a class="nav-link" href="login.html">Вход</a>
+              </li>
+              <li class="nav-item" id="logoutLink" style="display: none;">
+                <a class="nav-link" href="#" id="logoutNavBtn">Выйти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content-wrapper">
+        <section class="quotes-section">
+          <h2>ЛИТЕРАТУРА И ИСКУССТВО</h2>
+
+          <!-- Панель: поиск по автору и по тексту -->
+          <div class="search-sort-panel">
+            <!-- Поиск по автору -->
+            <div class="search-box">
+              <input
+                type="text"
+                id="authorSearch"
+                placeholder="Поиск по автору..."
+                class="search-input"
+              />
+              <button
+                id="clearAuthorSearch"
+                class="search-clear"
+                aria-label="Очистить"
+              >
+                ✕
+              </button>
+            </div>
+
+            <!-- Поиск по тексту цитаты -->
+            <div class="search-box">
+              <input
+                type="text"
+                id="textSearch"
+                placeholder="Поиск по тексту цитаты..."
+                class="search-input"
+              />
+              <button
+                id="clearTextSearch"
+                class="search-clear"
+                aria-label="Очистить"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+
+          <div class="quotes-container" id="quotesContainer">
+            <!-- 1. Марк Твен -->
+            <div class="quote-card" data-author="Марк Твен">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Хорошие друзья, хорошие книги и спящая совесть – вот идеальная
+                  жизнь.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/twen.jpg" alt="Марк Твен" />
+                    </div>
+                    <span class="author-name">МАРК ТВЕН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Пабло Пикассо -->
+            <div class="quote-card" data-author="Пабло Пикассо">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Искусство смывает с души пыль повседневной жизни.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/picasso.jpg" alt="Пабло Пикассо" />
+                    </div>
+                    <span class="author-name">ПАБЛО ПИКАССО</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Александр Фадеев -->
+            <div class="quote-card" data-author="Александр Фадеев">
+              <div class="quote-content">
+                <p class="quote-text">
+                  А разнообразие индивидуальностей рождает в литературе
+                  разнообразие форм.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/fadeev.jpg" alt="Александр Фадеев" />
+                    </div>
+                    <span class="author-name">АЛЕКСАНДР ФАДЕЕВ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Альберт Эйнштейн -->
+            <div class="quote-card" data-author="Альберт Эйнштейн">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Творчество — это когда интеллект веселится.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/einstein.webp" alt="Альберт Эйнштейн" />
+                    </div>
+                    <span class="author-name">АЛЬБЕРТ ЭЙНШТЕЙН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Рэй Брэдбери -->
+            <div class="quote-card" data-author="Рэй Брэдбери">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Я получил образование в библиотеке. Совершенно бесплатно.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/bradbury.jpeg" alt="Рэй Брэдбери" />
+                    </div>
+                    <span class="author-name">РЭЙ БРЭДБЕРИ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Клод Моне -->
+            <div class="quote-card" data-author="Клод Моне">
+              <div class="quote-content">
+                <p class="quote-text">
+                  То, что держит моё сердце бодрствующим, — это цветная тишина.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/monet.jpg" alt="Клод Моне" />
+                    </div>
+                    <span class="author-name">КЛОД МОНЕ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Зигмунд Фрейд -->
+            <div class="quote-card" data-author="Зигмунд Фрейд">
+              <div class="quote-content">
+                <p class="quote-text">
+                  В средние века сожгли бы меня, теперь жгут всего лишь мои
+                  книги.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/freud.webp" alt="Зигмунд Фрейд" />
+                    </div>
+                    <span class="author-name">ЗИГМУНД ФРЕЙД</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Александр Блок (первая) -->
+            <div class="quote-card" data-author="Александр Блок">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Литература должна быть насущным хлебом.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/blok.jpg" alt="Александр Блок" />
+                    </div>
+                    <span class="author-name">АЛЕКСАНДР БЛОК</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Стелла Адлер -->
+            <div class="quote-card" data-author="Стелла Адлер">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Жизнь сбивает с ног и дробит душу, а искусство напоминает, что
+                  она у тебя есть.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/adler.jpg" alt="Стелла Адлер" />
+                    </div>
+                    <span class="author-name">СТЕЛЛА АДЛЕР</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10. Рене Декарт -->
+            <div class="quote-card" data-author="Рене Декарт">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Чтение хороших книг — это разговор с самыми лучшими людьми
+                  прошедших времен, и притом такой разговор, когда они сообщают
+                  нам только лучшие свои мысли.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/descartes.webp" alt="Рене Декарт" />
+                    </div>
+                    <span class="author-name">РЕНЕ ДЕКАРТ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- 12. Франц Кафка -->
+            <div class="quote-card" data-author="Франц Кафка">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Книга должна быть топором для замерзшего в нас моря.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/kafka.jpeg" alt="Франц Кафка" />
+                    </div>
+                    <span class="author-name">ФРАНЦ КАФКА</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 13. Алексей Писемский -->
+            <div class="quote-card" data-author="Алексей Писемский">
+              <div class="quote-content">
+                <p class="quote-text">
+                  В литературе, как и в жизни, нужно помнить одно правило, что
+                  человек будет тысячу раз раскаиваться в том, что говорил
+                  много, но никогда, что мало.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/pisemsky.jpg" alt="Алексей Писемский" />
+                    </div>
+                    <span class="author-name">АЛЕКСЕЙ ПИСЕМСКИЙ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 14. Альберт Эйнштейн (2) -->
+            <div class="quote-card" data-author="Альберт Эйнштейн">
+              <div class="quote-content">
+                <p class="quote-text">Воображение важнее знания.</p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/einstein.webp" alt="Альберт Эйнштейн" />
+                    </div>
+                    <span class="author-name">АЛЬБЕРТ ЭЙНШТЕЙН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 15. Жорж Брак -->
+            <div class="quote-card" data-author="Жорж Брак">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Искусство создано для того, чтобы потрясать, наука — чтобы
+                  успокаивать.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/braque.jpg" alt="Жорж Брак" />
+                    </div>
+                    <span class="author-name">ЖОРЖ БРАК</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 16. Оскар Уайльд -->
+            <div class="quote-card" data-author="Оскар Уайльд">
+              <div class="quote-content">
+                <p class="quote-text">
+                  В чем разница между журналистикой и литературой? Журналистику
+                  не стоит читать, а литературу не читают.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/wilde.jpg" alt="Оскар Уайльд" />
+                    </div>
+                    <span class="author-name">ОСКАР УАЙЛЬД</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 17. Александр Блок (вторая) -->
+            <div class="quote-card" data-author="Александр Блок">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Литературы великих мировых эпох таят в себе присутствие
+                  чего-то страшного, то приближающегося, то опять отходящего,
+                  наконец разражающегося смерчем где-то совсем близко, так
+                  близко, что, кажется, почва уходит из-под ног: столб
+                  крутящейся пыли вырывает воронки в земле и уносит вверх
+                  окружающие цветы и травы. Тогда кажется, что близок конец и не
+                  может более существовать литература. Она сметена смерчем,
+                  разразившемся в душе писателя.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/blok.jpg" alt="Александр Блок" />
+                    </div>
+                    <span class="author-name">АЛЕКСАНДР БЛОК</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 18. Жюль Ренар -->
+            <div class="quote-card" data-author="Жюль Ренар">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Литература — это занятие, в котором приходится доказывать свой
+                  талант людям, которые не имеют таланта.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/renard.webp" alt="Жюль Ренар" />
+                    </div>
+                    <span class="author-name">ЖЮЛЬ РЕНАР</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 19. Брюс Ли -->
+            <div class="quote-card" data-author="Брюс Ли">
+              <div class="quote-content">
+                <p class="quote-text">Простота — высшая ступень искусства.</p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/brucelee.webp" alt="Брюс Ли" />
+                    </div>
+                    <span class="author-name">БРЮС ЛИ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 21. Курт Воннегут -->
+            <div class="quote-card" data-author="Курт Воннегут">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Практиковать любое искусство, независимо от того, хорошо или
+                  плохо получается, — значит развивать душу. Так делайте это.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/vonnegut.jpg" alt="Курт Воннегут" />
+                    </div>
+                    <span class="author-name">КУРТ ВОННЕГУТ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 22. Виктор Гюго -->
+            <div class="quote-card" data-author="Виктор Гюго">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Литература — это руководство человеческого разума человеческим
+                  родом.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/hugo.jpg" alt="Виктор Гюго" />
+                    </div>
+                    <span class="author-name">ВИКТОР ГЮГО</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 23. Густав Климт -->
+            <div class="quote-card" data-author="Густав Климт">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Искусство — это линия вокруг твоих мыслей.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/klimt.webp" alt="Густав Климт" />
+                    </div>
+                    <span class="author-name">ГУСТАВ КЛИМТ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 24. Майя Энджелоу -->
+            <div class="quote-card" data-author="Майя Энджелоу">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Творчество не тратится. Чем больше ты его используешь, тем
+                  больше его становится.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/angelou.webp" alt="Майя Энджелоу" />
+                    </div>
+                    <span class="author-name">МАЙЯ ЭНДЖЕЛОУ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 25. Альберт Эйнштейн (3) -->
+            <div class="quote-card" data-author="Альберт Эйнштейн">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Логика приведёт тебя от точки А к точке Б. Воображение
+                  приведёт куда угодно.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/einstein.webp" alt="Альберт Эйнштейн" />
+                    </div>
+                    <span class="author-name">АЛЬБЕРТ ЭЙНШТЕЙН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 26. Джорджия О'Киф -->
+            <div class="quote-card" data-author="Джорджия О'Киф">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Создать свой собственный мир — это требует смелости.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/okeeffe.avif" alt="Джорджия О'Киф" />
+                    </div>
+                    <span class="author-name">ДЖОРДЖИЯ О'КИФ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 27. Твайла Тарп -->
+            <div class="quote-card" data-author="Твайла Тарп">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Искусство — единственный способ убежать, не покидая дома.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/tharp.jpg" alt="Твайла Тарп" />
+                    </div>
+                    <span class="author-name">ТВАЙЛА ТАРП</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 28. Альберт Эйнштейн (4) -->
+            <div class="quote-card" data-author="Альберт Эйнштейн">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Творчество заразительно — передавайте его дальше.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/einstein.webp" alt="Альберт Эйнштейн" />
+                    </div>
+                    <span class="author-name">АЛЬБЕРТ ЭЙНШТЕЙН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 29. Густав Климт (2) -->
+            <div class="quote-card" data-author="Густав Климт">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Истина подобна огню; говорить правду значит светиться и
+                  гореть.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/klimt.webp" alt="Густав Климт" />
+                    </div>
+                    <span class="author-name">ГУСТАВ КЛИМТ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="noResults" class="no-results" style="display: none">
+            <p>Ничего не найдено</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© Все права защищены, «Ноумен», 2026</p>
+      </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M12 5L12 19M12 5L6 11M12 5L18 11"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

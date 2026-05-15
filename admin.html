@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  
+  <title>Ноумен — Админ-панель</title>
+  <meta name="description" content="Управление контентом сайта: модерация предложенных цитат, добавление новых высказываний и редактирование." />
+  <meta name="keywords" content="админ-панель, управление сайтом, модерация цитат" />
+  <meta name="author" content="Ноумен" />
+  <meta name="robots" content="noindex, nofollow" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/LOGOTRUE.svg" alt="Логотип Ноумен" width="160" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="mainNav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+              </li>
+              <li class="nav-item" id="profileLink">
+                <a class="nav-link" href="admin.html">Личный кабинет</a>
+              </li>
+              <li class="nav-item" id="loginLink" style="display: none;">
+                <a class="nav-link" href="login.html">Вход</a>
+              </li>
+              <li class="nav-item" id="logoutLink">
+                <a class="nav-link" href="#" id="logoutNavBtn">Выйти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content-wrapper admin-panel">
+        <h2 class="admin-title">АДМИН-ПАНЕЛЬ</h2>
+
+        <!-- Блок 1: Добавление цитаты вручную -->
+        <div class="admin-add-form">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;">
+              <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>
+            </svg>
+            Добавить цитату вручную
+          </h3>
+          <div class="form-group">
+            <label>Текст цитаты *</label>
+            <textarea id="adminQuoteText" rows="3" placeholder="Введите цитату..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Автор *</label>
+            <input type="text" id="adminAuthorName" placeholder="Имя автора" />
+          </div>
+          <div class="form-group">
+            <label>URL фото автора *</label>
+            <input type="url" id="adminAuthorAvatar" placeholder="https://example.com/photo.jpg" required />
+          </div>
+          <div class="form-group">
+            <label>Категория *</label>
+            <select id="adminCategory">
+              <option value="word">Слово и речь</option>
+              <option value="science">Наука и познание</option>
+              <option value="literature">Литература и искусство</option>
+              <option value="philosophy">Философия и мышление</option>
+            </select>
+          </div>
+          <button id="adminAddQuoteBtn" class="submit-btn">Добавить цитату</button>
+        </div>
+
+        <!-- Блок 2: На рассмотрении -->
+        <div class="admin-section">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            На рассмотрении
+          </h3>
+          <div id="suggestedList">Загрузка...</div>
+        </div>
+
+        <!-- Блок 3: Принятые цитаты -->
+        <div class="admin-section">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Принятые цитаты
+          </h3>
+          <div id="approvedList">Загрузка...</div>
+        </div>
+
+        <!-- Блок 4: Отклонённые цитаты -->
+        <div class="admin-section">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px; vertical-align: middle;">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            Отклонённые цитаты
+          </h3>
+          <div id="rejectedList">Загрузка...</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Модальное окно для редактирования -->
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>Редактировать цитату</h3>
+        <input type="hidden" id="editQuoteId" />
+        <div class="form-group">
+          <label>Текст цитаты</label>
+          <textarea id="editQuoteText" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Автор</label>
+          <input type="text" id="editAuthorName" />
+        </div>
+        <div class="form-group">
+          <label>Категория</label>
+          <select id="editCategory">
+            <option value="word">Слово и речь</option>
+            <option value="science">Наука и познание</option>
+            <option value="literature">Литература и искусство</option>
+            <option value="philosophy">Философия и мышление</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>URL фото автора</label>
+          <input type="url" id="editAuthorAvatar" placeholder="https://example.com/photo.jpg" />
+        </div>
+        <button id="saveEditBtn" class="submit-btn">Сохранить</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© Все права защищены, «Ноумен», 2026</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

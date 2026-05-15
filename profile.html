@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  
+  <title>Ноумен — Личный кабинет</title>
+  <meta name="description" content="Ваш личный кабинет для сохранения любимых цитат, управления профилем и отслеживания избранного." />
+  <meta name="keywords" content="личный кабинет, сохраненные цитаты, профиль, избранное" />
+  <meta name="author" content="Ноумен" />
+  <meta name="robots" content="noindex, nofollow" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/LOGOTRUE.svg" alt="Логотип Ноумен" width="160" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" id="mainNav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="suggest.html">Предложить цитату</a>
+            </li>
+            <li class="nav-item" id="profileLink">
+              <a class="nav-link active" href="profile.html">Личный кабинет</a>
+            </li>
+            <li class="nav-item" id="loginLink">
+              <a class="nav-link" href="login.html">Вход</a>
+            </li>
+            <li class="nav-item" id="logoutLink" style="display: none;">
+              <a class="nav-link" href="#" id="logoutNavBtn">Выйти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-wrapper">
+      <div class="profile-container">
+        <div class="profile-sidebar">
+          <div class="avatar-section">
+            <div class="avatar-circle">
+              <img src="./img/ava.webp" alt="Аватар" />
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-form-container">
+          <form id="profileForm" class="profile-form">
+            <div class="form-group">
+              <label for="nickname">Никнейм</label>
+              <input type="text" id="nickname" name="nickname" value="Мыслитель_Ноумен" placeholder="Ваш никнейм" />
+              <small class="form-hint">Как вас будут видеть другие пользователи</small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Электронная почта</label>
+              <input type="email" id="email" name="email" value="user@noumen.ru" placeholder="example@mail.com" />
+              <small class="form-hint">Используется для входа и уведомлений</small>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn-cancel" id="cancelBtn">
+                Отмена
+              </button>
+              <button type="submit" class="btn-save">
+                Сохранить изменения
+              </button>
+            </div>
+
+            <div id="saveMessage" class="save-message"></div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="double-divider" />
+
+      <div class="quotes-section">
+        <h2>СОХРАНЁННЫЕ ЦИТАТЫ</h2>
+        <div class="quotes-container" id="savedQuotesContainer">
+          <!-- Сюда JS будет подставлять сохранённые цитаты -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© Все права защищены, «Ноумен», 2026</p>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 5L12 19M12 5L6 11M12 5L18 11" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

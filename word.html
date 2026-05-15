@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  
+  <title>Ноумен — Слово и речь</title>
+  <meta name="description" content="Мудрые мысли о силе слова, искусстве речи и общения от Цицерона, Ремарка, Пелевина и других." />
+  <meta name="keywords" content="слово, речь, общение, риторика, цитаты о языке, сила слова" />
+  <meta name="author" content="Ноумен" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/LOGOTRUE.svg" alt="Логотип Ноумен" width="160" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="mainNav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="suggest.html">Предложить цитату</a>
+              </li>
+              <li class="nav-item" id="profileLink">
+                <a class="nav-link" href="profile.html">Личный кабинет</a>
+              </li>
+              <li class="nav-item" id="loginLink">
+                <a class="nav-link active" href="login.html">Вход</a>
+              </li>
+              <li class="nav-item" id="logoutLink" style="display: none">
+                <a class="nav-link" href="#" id="logoutNavBtn">Выйти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content-wrapper">
+        <section class="quotes-section">
+          <h2>СЛОВО И РЕЧЬ</h2>
+
+          <!-- Панель: поиск + сортировка -->
+          <div class="search-sort-panel">
+            <!-- Поиск по автору -->
+            <div class="search-box">
+              <input
+                type="text"
+                id="authorSearch"
+                placeholder="Поиск по автору..."
+                class="search-input"
+              />
+              <button
+                id="clearAuthorSearch"
+                class="search-clear"
+                aria-label="Очистить"
+              >
+                ✕
+              </button>
+            </div>
+
+            <!-- Поиск по тексту цитаты -->
+            <div class="search-box">
+              <input
+                type="text"
+                id="textSearch"
+                placeholder="Поиск по тексту цитаты..."
+                class="search-input"
+              />
+              <button
+                id="clearTextSearch"
+                class="search-clear"
+                aria-label="Очистить"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+          <div class="quotes-container" id="quotesContainer">
+            <!-- 1. Марк Туллий Цицерон -->
+            <div class="quote-card" data-author="Марк Туллий Цицерон">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Речь должна вытекать и развиваться из знания предмета. Если же
+                  оратор не изучил его, то всякое красноречие является
+                  напрасным, ребяческим усилием.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/ciceron.jpg" alt="Цицерон" />
+                    </div>
+                    <span class="author-name">МАРК ТУЛЛИЙ ЦИЦЕРОН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Плутарх -->
+            <div class="quote-card" data-author="Плутарх">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Сила речи состоит в умении выразить многое в немногих словах.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/plutarch.jpg" alt="Плутарх" />
+                    </div>
+                    <span class="author-name">ПЛУТАРХ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Эрих Мария Ремарк -->
+            <div class="quote-card" data-author="Эрих Мария Ремарк">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Трудно найти слова, когда действительно есть, что сказать.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/remark.jpg" alt="Ремарк" />
+                    </div>
+                    <span class="author-name">ЭРИХ МАРИЯ РЕМАРК</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Марина Цветаева -->
+            <div class="quote-card" data-author="Марина Цветаева">
+              <div class="quote-content">
+                <p class="quote-text">Наши лучшие слова — интонации.</p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/tsvetaeva.webp" alt="Цветаева" />
+                    </div>
+                    <span class="author-name">МАРИНА ЦВЕТАЕВА</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Георг Франклин Гаумер -->
+            <div class="quote-card" data-author="Георг Франклин Гаумер">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Три вещи не возвращаются: выпущенная стрела, сказанное слово и
+                  прошедшие дни.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/gaumer.jpg" alt="Гаумер" />
+                    </div>
+                    <span class="author-name">ГЕОРГ ФРАНКЛИН ГАУМЕР</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Будда Шакьямуни -->
+            <div class="quote-card" data-author="Будда Шакьямуни">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Сколько бы мудрых слов ты ни прочёл, сколько бы ни произнёс,
+                  какой тебе от них толк, коль ты не применяешь их на деле?
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/buddha.jpg" alt="Будда" />
+                    </div>
+                    <span class="author-name">БУДДА ШАКЬЯМУНИ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Антон Павлович Чехов -->
+            <div class="quote-card" data-author="Антон Павлович Чехов">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Бывают люди, которые всегда говорят только умные и хорошие
+                  слова, но чувствуешь, что они тупые люди.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/chekhov.webp" alt="Чехов" />
+                    </div>
+                    <span class="author-name">АНТОН ПАВЛОВИЧ ЧЕХОВ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Стивен Кинг -->
+            <div class="quote-card" data-author="Стивен Кинг">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Самые важные вещи сложнее всего выразить словами. Иногда это
+                  оборачивается тем, что мы стыдимся собственных чувств, потому
+                  что слова делают наши чувства ущербными.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/king.jpeg" alt="Кинг" />
+                    </div>
+                    <span class="author-name">СТИВЕН КИНГ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Джоан Роулинг -->
+            <div class="quote-card" data-author="Джоан Роулинг">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Даже самые лучшие из нас иногда вынуждены брать свои слова
+                  обратно.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/rowling.jpg" alt="Роулинг" />
+                    </div>
+                    <span class="author-name">ДЖОАН РОУЛИНГ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10. Николай Гоголь -->
+            <div class="quote-card" data-author="Николай Гоголь">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Как ни глупы слова дурака, а иногда бывают они достаточны,
+                  чтобы смутить умного человека.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/gogol.jpg" alt="Гоголь" />
+                    </div>
+                    <span class="author-name"
+                      >НИКОЛАЙ ГОГОЛЬ</span
+                    >
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11. Эрих Мария Ремарк (длинная) -->
+            <div class="quote-card" data-author="Эрих Мария Ремарк">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Мы хотели сказать ей что-нибудь, но я не мог... И даже если
+                  нужные слова приходят, то стыдишься их произнести. Все эти
+                  слова принадлежат прошлым столетиям. Наше время не нашло ещё
+                  слов для выражения своих чувств. Оно умеет быть только
+                  развязным, всё остальное — искусственно.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/remark.jpg" alt="Ремарк" />
+                    </div>
+                    <span class="author-name">ЭРИХ МАРИЯ РЕМАРК</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12. Оскар Уайльд -->
+            <div class="quote-card" data-author="Оскар Уайльд">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Простые слова — но как они страшны! От них никуда не уйдёшь.
+                  Как они ясны, неотразимо сильны и жестоки! И вместе с тем —
+                  какое в них таится коварное очарование.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/wilde.jpg" alt="Уайльд" />
+                    </div>
+                    <span class="author-name">ОСКАР УАЙЛЬД</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 13. Грэм Джойс -->
+            <div class="quote-card" data-author="Грэм Джойс">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Люди чаще всего употребляют слово «ничего» для того, чтобы
+                  скрыть за ним очень важное «нечто».
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/joyce.jpg" alt="Джойс" />
+                    </div>
+                    <span class="author-name">ГРЭМ ДЖОЙС</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 14. Али ибн Абу Талиб -->
+            <div class="quote-card" data-author="Али ибн Абу Талиб">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Ты — хозяин своих слов, пока не высказал их. Когда высказал,
+                  то уже они — твои хозяева.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/talib.jpg" alt="Талиб" />
+                    </div>
+                    <span class="author-name">АЛИ ИБН АБУ ТАЛИБ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 15. Фредерик Бегбедер -->
+            <div class="quote-card" data-author="Фредерик Бегбедер">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Я терпеть не могу фразы, которые начинаются со слов «я терпеть
+                  не могу».
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/begbeder.jpg" alt="Бегбедер" />
+                    </div>
+                    <span class="author-name">ФРЕДЕРИК БЕГБЕДЕР</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 16. Дон-Аминадо -->
+            <div class="quote-card" data-author="Дон-Аминадо">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Для утвердительного ответа достаточно лишь одного слова —
+                  «да». Все прочие слова придуманы, чтобы сказать «нет».
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/aminado.webp" alt="Аминадо" />
+                    </div>
+                    <span class="author-name">ДОН-АМИНАДО</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 17. Виктор Пелевин -->
+            <div class="quote-card" data-author="Виктор Пелевин">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Считается, если бросить палку собаке, она будет глядеть на эту
+                  палку. А если бросить палку льву, то он будет, не отрываясь,
+                  смотреть на кидающего. Это формальная фраза, которую говорили
+                  во время диспутов в древнем Китае, если собеседник начинал
+                  цепляться за слова и переставал видеть главное.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/pelevin.png" alt="Пелевин" />
+                    </div>
+                    <span class="author-name">ВИКТОР ПЕЛЕВИН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 18. Мартин Лютер -->
+            <div class="quote-card" data-author="Мартин Лютер">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Речь одного человека — ещё не речь: нужно выслушать обе
+                  стороны.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/luther.jpg" alt="Лютер" />
+                    </div>
+                    <span class="author-name">МАРТИН ЛЮТЕР</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 19. Александр Дюма -->
+            <div class="quote-card" data-author="Александр Дюма">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Как бы хорошо ты ни говорил, если ты говоришь слишком много,
+                  то в конце концов станешь говорить глупости.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/dumas.jpg" alt="Дюма" />
+                    </div>
+                    <span class="author-name">АЛЕКСАНДР ДЮМА</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 20. Лев Толстой -->
+            <div class="quote-card" data-author="Лев Толстой">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Мы часто повторяем, что о человеке судят по его делам, но
+                  забываем иногда, что слово — тоже поступок. Речь человека —
+                  зеркало его самого.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/tolstoy.jpg" alt="Толстой" />
+                    </div>
+                    <span class="author-name">ЛЕВ ТОЛСТОЙ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 21. Жан Ростан -->
+            <div class="quote-card" data-author="Жан Ростан">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Можно объясниться с теми, кто говорит на другом языке, но не с
+                  теми, кто в те же слова вкладывает совсем другой смысл.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/rostan.webp" alt="Ростан" />
+                    </div>
+                    <span class="author-name">ЖАН РОСТАН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 22. Винсент Ван Гог -->
+            <div class="quote-card" data-author="Винсент Ван Гог">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Лучше говорить меньше, но выбирать такие слова, в которых
+                  много смысла, чем произносить длинные, но пустые речи, которые
+                  столь же бесполезны, сколь легко произносятся.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/vangogh.jpg" alt="Ван Гог" />
+                    </div>
+                    <span class="author-name">ВИНСЕНТ ВАН ГОГ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 23. Марк Твен -->
+            <div class="quote-card" data-author="Марк Твен">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Человеческий мозг — великолепная штука. Он работает до той
+                  самой минуты, когда ты встаёшь, чтобы произнести речь.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/twen.jpg" alt="Твен" />
+                    </div>
+                    <span class="author-name">МАРК ТВЕН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 24. Франц Кафка -->
+            <div class="quote-card" data-author="Франц Кафка">
+              <div class="quote-content">
+                <p class="quote-text">Не будьте рабом слов.</p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/kafka.jpeg" alt="Кафка" />
+                    </div>
+                    <span class="author-name">ФРАНЦ КАФКА</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 25. Томас Карлейль -->
+            <div class="quote-card" data-author="Томас Карлейль">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Признак хорошего образования — говорить о самых высоких
+                  предметах самыми простыми словами.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/сarlyle.jpg" alt="Карлейль" />
+                    </div>
+                    <span class="author-name">ТОМАС КАРЛЕЙЛЬ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 26. Ральф Уолдо Эмерсон -->
+            <div class="quote-card" data-author="Ральф Уолдо Эмерсон">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Признак хорошего образования — говорить о самых высоких
+                  предметах самыми простыми словами.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/emerson.jpg" alt="Эмерсон" />
+                    </div>
+                    <span class="author-name">РАЛЬФ УОЛДО ЭМЕРСОН</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="noResults" class="no-results" style="display: none">
+            <p>Ничего не найдено</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© Все права защищены, «Ноумен», 2026</p>
+      </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M12 5L12 19M12 5L6 11M12 5L18 11"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

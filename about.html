@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  
+  <title>Ноумен — О проекте</title>
+  <meta name="description" content="Узнайте больше о проекте Ноумен — коллекция мудрых цитат великих мыслителей для развития и вдохновения." />
+  <meta name="keywords" content="о нас, проект Ноумен, образовательный центр, цитатник, о проекте" />
+  <meta name="author" content="Ноумен" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./img/LOGOTRUE.svg" alt="Логотип Ноумен" width="160" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" id="mainNav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="suggest.html">Предложить цитату</a>
+            </li>
+            <li class="nav-item" id="profileLink">
+              <a class="nav-link" href="profile.html">Личный кабинет</a>
+            </li>
+            <li class="nav-item" id="loginLink">
+              <a class="nav-link" href="login.html">Вход</a>
+            </li>
+            <li class="nav-item" id="logoutLink" style="display: none;">
+              <a class="nav-link" href="#" id="logoutNavBtn">Выйти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content-wrapper">
+      <h2 class="about-page-title">О НАС</h2>
+
+      <section class="about-description">
+        <p>
+          <strong>«Ноумен»</strong> — частный образовательный центр, где учат
+          говорить, мыслить и писать. Мы помогаем детям от 12 лет и взрослым
+          обрести уверенность в публичных выступлениях, научиться
+          аргументировать свою точку зрения и работать с текстом.
+        </p>
+        <p>
+          В центре мы ведём живые занятия по трём направлениям: ораторское
+          искусство, критическое мышление и литературная мастерская. Также
+          проводим корпоративные тренинги и открытые мероприятия для всех
+          желающих.
+        </p>
+      </section>
+
+      <!-- Карусель "Жизнь центра" -->
+      <section class="life-section">
+
+        <div class="swiper life-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/1 TRUE.png" alt="1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/2 TRUE.png" alt="2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/3 TRUE.png" alt="3">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/4 TRUE.png" alt="4">
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Контакты -->
+      <section class="about-contact">
+        <h2 class="about-contact-title">КОНТАКТЫ</h2>
+        <div class="about-contact-grid">
+          <div class="about-contact-info">
+            <div class="about-contact-item">
+              <div class="about-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                  <circle cx="12" cy="9" r="2.5" />
+                </svg>
+              </div>
+              <div class="about-contact-text">
+                <h3>Адрес</h3>
+                <p>Казань, ул. Кремлевская, д. 35</p>
+              </div>
+            </div>
+            <div class="about-contact-item">
+              <div class="about-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8 10a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <div class="about-contact-text">
+                <h3>Телефон</h3>
+                <p><a href="tel:+74967891522">+7 (496) 789-15-22</a></p>
+              </div>
+            </div>
+            <div class="about-contact-item">
+              <div class="about-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="about-contact-text">
+                <h3>Email</h3>
+                <p><a href="mailto:noumen@mail.ru">noumen@mail.ru</a></p>
+              </div>
+            </div>
+            <div class="about-contact-item">
+              <div class="about-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <div class="about-contact-text">
+                <h3>Часы работы</h3>
+                <p>Пн–Пт: 10:00 – 20:00<br />Сб–Вс: 11:00 – 18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-contact-map">
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=49.122135%2C55.792139&z=16&pt=49.122135,55.792139,pm2rdm"
+              width="100%" height="100%" frameborder="0" allowfullscreen="true" style="border: none; display: block">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© Все права защищены, «Ноумен», 2026</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

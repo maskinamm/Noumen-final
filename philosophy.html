@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  
+  <title>Ноумен — Философия и мышление</title>
+  <meta name="description" content="Цитаты Сократа, Ницше, Канта, Конфуция и других мыслителей о смысле жизни, счастье и познании." />
+  <meta name="keywords" content="философия, цитаты философов, Сократ, Ницше, Кант, Конфуций, мышление" />
+  <meta name="author" content="Ноумен" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="./img/LOGOTRUE.svg" alt="Логотип Ноумен" width="160" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="mainNav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="suggest.html">Предложить цитату</a>
+              </li>
+              <li class="nav-item" id="profileLink">
+                <a class="nav-link" href="profile.html">Личный кабинет</a>
+              </li>
+              <li class="nav-item" id="loginLink">
+                <a class="nav-link" href="login.html">Вход</a>
+              </li>
+              <li class="nav-item" id="logoutLink" style="display: none;">
+                <a class="nav-link" href="#" id="logoutNavBtn">Выйти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content-wrapper">
+        <section class="quotes-section">
+          <h2>ФИЛОСОФИЯ И МЫШЛЕНИЕ</h2>
+
+          <!-- Панель: поиск по автору и по тексту -->
+          <div class="search-sort-panel">
+            <!-- Поиск по автору -->
+            <div class="search-box">
+              <input
+                type="text"
+                id="authorSearch"
+                placeholder="Поиск по автору..."
+                class="search-input"
+              />
+              <button
+                id="clearAuthorSearch"
+                class="search-clear"
+                aria-label="Очистить"
+              >
+                ✕
+              </button>
+            </div>
+
+            <!-- Поиск по тексту цитаты -->
+            <div class="search-box">
+              <input
+                type="text"
+                id="textSearch"
+                placeholder="Поиск по тексту цитаты..."
+                class="search-input"
+              />
+              <button
+                id="clearTextSearch"
+                class="search-clear"
+                aria-label="Очистить"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+
+          <div class="quotes-container" id="quotesContainer">
+            <!-- 1. Сократ -->
+            <div class="quote-card" data-author="Сократ">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Бесполезные люди живут только для того, чтобы есть и пить.
+                  Достойные люди едят и пьют только для того, чтобы жить.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/Socrate.jpg" alt="Сократ" />
+                    </div>
+                    <span class="author-name">СОКРАТ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Фридрих Ницше -->
+            <div class="quote-card" data-author="Фридрих Ницше">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Несчастным или счастливым человека делают только его мысли, а
+                  не внешние обстоятельства. Управляя своими мыслями, он
+                  управляет своим счастьем.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/nietzsche.jpg" alt="Ницше" />
+                    </div>
+                    <span class="author-name">ФРИДРИХ НИЦШЕ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Конфуций -->
+            <div class="quote-card" data-author="Конфуций">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Красота есть во всем, но не всем дано это видеть.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/CONFUCIUS1.webp" alt="Конфуций" />
+                    </div>
+                    <span class="author-name">КОНФУЦИЙ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Иммануил Кант -->
+            <div class="quote-card" data-author="Иммануил Кант">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Дайте человеку всё, чего он желает, и в ту же минуту он
+                  почувствует, что это всё не есть всё.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/kant.jpg" alt="Кант" />
+                    </div>
+                    <span class="author-name">ИММАНУИЛ КАНТ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Бертран Рассел -->
+            <div class="quote-card" data-author="Бертран Рассел">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Проблема этого мира в том, что глупцы и фанатики слишком
+                  уверены в себе, а умные люди полны сомнений.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/russell.webp" alt="Рассел" />
+                    </div>
+                    <span class="author-name">БЕРТРАН РАССЕЛ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. Альбер Камю -->
+            <div class="quote-card" data-author="Альбер Камю">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Свободен лишь тот, кто может позволить себе не лгать.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/camu.avif" alt="Камю" />
+                    </div>
+                    <span class="author-name">АЛЬБЕР КАМЮ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Лев Толстой -->
+            <div class="quote-card" data-author="Лев Толстой">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Пора перестать ждать неожиданных подарков от жизни, а самому
+                  делать жизнь.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/tolstoy.jpg" alt="Толстой" />
+                    </div>
+                    <span class="author-name">ЛЕВ ТОЛСТОЙ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. Махатма Ганди -->
+            <div class="quote-card" data-author="Махатма Ганди">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Свобода ничего не стоит, если она не включает в себя свободу
+                  ошибаться.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/gandhi.avif" alt="Ганди" />
+                    </div>
+                    <span class="author-name">МАХАТМА ГАНДИ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Лао-Цзы -->
+            <div class="quote-card" data-author="Лао-Цзы">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Тот, кто знает и делает вид незнающего, тот на высоте. Кто без
+                  знаний делает вид знающего, тот больной.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/Lao Tzu.jpg" alt="Лао-Цзы" />
+                    </div>
+                    <span class="author-name">ЛАО-ЦЗЫ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10. Дэвид Юм -->
+            <div class="quote-card" data-author="Дэвид Юм">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Несомненно, что большинство людей всегда предпочтет легкую и
+                  ясную философию точной, но малодоступной и многие будут
+                  рекомендовать первую, считая ее не только более приятной, но и
+                  более полезной, чем вторая.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/yum.webp" alt="Юм" />
+                    </div>
+                    <span class="author-name">ДЭВИД ЮМ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11. Айн Рэнд -->
+            <div class="quote-card" data-author="Айн Рэнд">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Я существую – следовательно, я буду мыслить.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/rand.jpg" alt="Рэнд" />
+                    </div>
+                    <span class="author-name">АЙН РЭНД</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12. Вольтер -->
+            <div class="quote-card" data-author="Вольтер">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Суди о человеке больше по его вопросам, чем по его ответам.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/volter.jpeg" alt="Вольтер" />
+                    </div>
+                    <span class="author-name">ВОЛЬТЕР</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 13. Жан-Жак Руссо -->
+            <div class="quote-card" data-author="Жан-Жак Руссо">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Жить — это не значит дышать, это значит действовать. Не тот
+                  человек больше всего жил, который может насчитать больше лет,
+                  а тот, кто больше всего чувствовал жизнь…
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/russo.jpg" alt="Руссо" />
+                    </div>
+                    <span class="author-name">ЖАН-ЖАК РУССО</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 14. Терри Пратчетт -->
+            <div class="quote-card" data-author="Терри Пратчетт">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Жизнь в виде орангутана куда более приятна, чем жизнь в виде
+                  человека, потому что все глобальные философские вопросы
+                  сводятся к раздумьям о том, откуда появится следующий банан.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/terry pratchett.webp" alt="Пратчетт" />
+                    </div>
+                    <span class="author-name">ТЕРРИ ПРАТЧЕТТ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 15. Никколо Макиавелли -->
+            <div class="quote-card" data-author="Никколо Макиавелли">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Какое бы дело мы ни затевали, время всегда кажется
+                  неподходящим, и никогда не бывает абсолютно благоприятных
+                  обстоятельств. Тот, кто ждёт идеального случая, так никогда и
+                  не начнёт дела, а если и начнёт, то зачастую его ожидает
+                  печальный конец.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/niccolo machiavelli.jpg" alt="Макиавелли" />
+                    </div>
+                    <span class="author-name">НИККОЛО МАКИАВЕЛЛИ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 16. Конфуций (2) -->
+            <div class="quote-card" data-author="Конфуций">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Когда вам покажется, что цель недостижима, не изменяйте цель —
+                  изменяйте свой план действий.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/CONFUCIUS1.webp" alt="Конфуций" />
+                    </div>
+                    <span class="author-name">КОНФУЦИЙ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 17. Шарлотта Бронте -->
+            <div class="quote-card" data-author="Шарлотта Бронте">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Жизнь слишком коротка, и не стоит тратить её на то, чтобы
+                  лелеять в душе вражду или запоминать обиды.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/sharlotta-bronte_531.jpg" alt="Бронте" />
+                    </div>
+                    <span class="author-name">ШАРЛОТТА БРОНТЕ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 18. Лао-Цзы (2) -->
+            <div class="quote-card" data-author="Лао-Цзы">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Путешествие в сотни миль начинается с одного шага.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/Lao Tzu.jpg" alt="Лао-Цзы" />
+                    </div>
+                    <span class="author-name">ЛАО-ЦЗЫ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 19. Фома Аквинский -->
+            <div class="quote-card" data-author="Фома Аквинский">
+              <div class="quote-content">
+                <p class="quote-text">
+                  То, что ты не хочешь иметь завтра, отбрось сегодня, а то, что
+                  хочешь иметь завтра, приобретай сегодня.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/thomas aquinas.webp" alt="Аквинский" />
+                    </div>
+                    <span class="author-name">ФОМА АКВИНСКИЙ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 20. Иммануил Кант (2) -->
+            <div class="quote-card" data-author="Иммануил Кант">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Человек редко думает при свете о темноте, в счастье — о беде,
+                  в довольстве — о страданиях и, наоборот, всегда думает в
+                  темноте о свете, в беде — о счастье, в нищете — о достатке.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/kant.jpg" alt="Кант" />
+                    </div>
+                    <span class="author-name">ИММАНУИЛ КАНТ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 22. Барбара Оакли -->
+            <div class="quote-card" data-author="Барбара Оакли">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Мышление — как монетка. Мы можем видеть либо одну её сторону,
+                  либо другую. Но только не обе стороны одновременно. Похоже,
+                  что пребывание в одном из режимов мышления затрудняет доступ к
+                  другому.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/barbara oakley.jpg" alt="Оакли" />
+                    </div>
+                    <span class="author-name">БАРБАРА ОАКЛИ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 23. Абу Хамид аль-Газали -->
+            <div class="quote-card" data-author="Абу Хамид аль-Газали">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Сомнение есть путь к истине: кто не сомневается — не видит,
+                  кто не видит — не понимает, кто не понимает — пребывает в
+                  слепоте и заблуждении.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/alghazali2.webp" alt="аль-Газали" />
+                    </div>
+                    <span class="author-name">АБУ ХАМИД АЛЬ-ГАЗАЛИ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 24. Мо-Цзы -->
+            <div class="quote-card" data-author="Мо-Цзы">
+              <div class="quote-content">
+                <p class="quote-text">
+                  На основе прошлого познаём будущее, на основе ясного познаём
+                  скрытое.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/MO-TZU.jpg" alt="Мо-Цзы" />
+                    </div>
+                    <span class="author-name">МО-ЦЗЫ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 25. Фридрих Ницше (2) -->
+            <div class="quote-card" data-author="Фридрих Ницше">
+              <div class="quote-content">
+                <p class="quote-text">
+                  Если вы решили действовать, закройте двери для сомнений.
+                </p>
+                <div class="quote-footer">
+                  <div class="quote-author">
+                    <div class="author-avatar">
+                      <img src="./img/nietzsche.jpg" alt="Ницше" />
+                    </div>
+                    <span class="author-name">ФРИДРИХ НИЦШЕ</span>
+                  </div>
+                  <button class="heart-btn">
+                    <svg class="heart-icon" viewBox="0 0 24 24">
+                      <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="noResults" class="no-results" style="display: none">
+            <p>Ничего не найдено</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© Все права защищены, «Ноумен», 2026</p>
+      </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Наверх">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M12 5L12 19M12 5L6 11M12 5L18 11"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
